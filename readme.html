@@ -11,11 +11,21 @@
         for incoming client connections and creates a seperate thread(connectionhandler) to handle each client.</p>
     <p>The server implements the Runnable interface, so it can be executed in a separate thread. In the run() method, it sets up the server socket, accepts client connections, 
         creates a new ConnectionHandler for each client, adds it to the connections list, and executes it in the thread pool.</p>
-        <p>The broadcast() method sends a message to all connected clients by calling the sendMessage() method on each ConnectionHandler instance.</p>
-        <p>The sendMessage() method sends a message to the client by writing it to the output stream.</p>
-        <p>The shutdown() method is responsible for closing the input and output streams and the client socket.</p>
-        <p>Finally, in the main() method, an instance of the server class is created, and the run() method is called to start the server in a separate thread.</p>
-        <p>Overall, this code represents a basic chat server that can handle multiple clients concurrently, allowing them to communicate with each other by exchanging text messages.</p>
-        
+        <ul>
+            <li>The broadcast() method sends a message to all connected clients by calling the sendMessage() method on each ConnectionHandler instance.</li>
+        </ul>
+        <ul>
+            <li>The sendMessage() method sends a message to the client by writing it to the output stream.</li>
+        </ul>
+        <ul>
+            <li>The shutdown() method is responsible for closing the input and output streams and the client socket.</li>
+        </ul>
+        <ul>
+            <li>Finally, in the main() method, an instance of the server class is created, and the run() method is called to start the server in a separate thread.</li>
+        </ul>
+        <ul>
+            <li>Overall, this code represents a basic chat server that can handle multiple clients concurrently, allowing them to communicate with each other by exchanging text messages.
+            </li>
+        </ul>
 </body>
 </html>
